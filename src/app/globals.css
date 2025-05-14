@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* In your global CSS file (e.g., styles.css or a similar file) */
+
+
+body {
+ 
+  overflow-x: hidden;
+}
+
+@keyframes slow-bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px); /* Adjust this value for bounce height */
+    }
+  }
+  
+  .slow-bounce {
+    animation: slow-bounce 5s infinite; /* 5s duration for slow motion */
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+  }
+  }
+  .slow-bounce-two {
+    animation: bounce 5s infinite; /* Adjust duration as needed */
+  }
+ 
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px); /* Move down by 5px */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .slow-bounce-tw {
+    animation: bounce 10s infinite; /* Adjust duration as needed */
+  }
+ 
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px); /* Move down by 5px */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .spine {
+    animation: moveUpDown 10s infinite; /* Adjust duration as needed */
+  }
+/*   
+  seo page animation */
+  @keyframes slow-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .slow-spin {
+    animation: slow-spin 5s linear infinite; /* Adjust '10s' for desired speed */
+  }
+  /* scrooll animation  */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+/* Custom scrollbar styling for vertical scroll */
+::-webkit-scrollbar {
+  width: 1rem;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  background-color: #e9ffaf;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #7da90e;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background-clip: content-box;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: 'Calibri';
+  src: url('/fonts/calibri.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gabriola';
+  src: url('/fonts/gabriola.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cambria';
+  src: url('/fonts/cambria.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Calibri';
+  src: url('/fonts/calibri-bold-italic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+.shadow-glow {
+  box-shadow: 0 0 10px rgba(125, 150, 61, 1), 0 0 20px rgba(125, 150, 61, 0.7), 0 0 30px rgba(125, 150, 61, 0.5);
+}
+
+

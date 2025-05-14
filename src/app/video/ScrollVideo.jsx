@@ -1,0 +1,17 @@
+import React from 'react'
+import { IoMdFlower } from "react-icons/io";
+export default function ScrollVideo() {
+  return (
+    <div className="w-full overflow-hidden bg-[#effbce] py-4">
+      <div className="whitespace-nowrap animate-scroll text-[50px] md:text-[70px] font-bold text-gray-800 flex items-center leading-[1.8] md:leading-[1.8]">
+        {/* Repeating text and icon pairs */}
+        {Array.from({ length: 5 }).map((_, index) => (
+          <div className="flex items-center mx-4" key={index}>
+            <span className='capitalize font-calibri italic'>Edit videos to perfection for every project</span>
+            <IoMdFlower className="ml-5 text-[#7d963d] text-[40px] md:text-[70px] slow-spin" />
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
