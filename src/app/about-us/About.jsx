@@ -44,7 +44,7 @@ export default function About() {
           <p className="text-gray-600 text-sm md:text-xl font-gabriola">
             Orritech offers a full range of technology & training methods for
             data analysis, business consultation, and strategic ways for
-            business. It's an opportunity for new ventures.
+            business. Its an opportunity for new ventures.
             <br /> <br />
             Orritech provides a complete suite of consultancy and training
             methods tailored for business success.

@@ -78,7 +78,7 @@ const Page = () => {
             What We Offer
           </h2>
           <h2 className="font-calibri text-[28px] md:text-[50px] font-bold leading-[35px] md:leading-[55px] italic">
-            Enhance Your <br /> Company's Brand
+            Enhance Your <br /> Companys Brand
           </h2>
           <p className="font-gabriola text-gray-700 py-5 capitalize text-[30px] md:text-2xl text-justify">
             We possess the skillset to elevate your company’s brand with our

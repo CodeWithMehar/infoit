@@ -137,7 +137,7 @@ const TabsComponent = () => {
 
   <div className="mx-auto flex flex-col justify-center items-center text-center space-y-4 mt-10">
     <h1 className="text-3xl md:text-[40px] font-bold border-b-4 border-[#7d963d] font-calibri italic">
-      WANT'S TO ENROLL
+      WANTs TO ENROLL
     </h1>
     <ul className="list-none space-y-2">
       <li className="flex items-center space-x-2 text-[18px] md:text-[20px]">
