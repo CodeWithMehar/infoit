@@ -4,7 +4,7 @@ import { PiArrowsClockwiseBold } from "react-icons/pi";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Section1 from './Section1';
 import SocialIcons from '../socialicons';
-
+import Link from 'next/link';
 export default function Page() {
   const [isClient, setIsClient] = useState(false);
   const { scrollY } = useScroll();
@@ -27,9 +27,9 @@ export default function Page() {
           <div className="relative group top-64 left-14 bg-gray-700 border-l-8 border-[#7d963d] w-[250px] h-[60px] rounded-lg text-center flex items-center justify-center overflow-hidden">
             <div className="absolute inset-0 bg-[#7d963d] scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-left z-0"></div>
             <p className="relative flex gap-3 items-center text-gray-200 group-hover:text-white z-10 font-calibri italic">
-              <a href="/" className="hover:text-white">HOME</a>
-              <PiArrowsClockwiseBold />
-              <a href="/contact-us" className="hover:text-white ">Contact Us</a>
+           <Link href="/" className="hover:text-white">HOME</Link>
+<PiArrowsClockwiseBold />
+<Link href="/contact-us" className="hover:text-white">Contact Us</Link>
             </p>
           </div>
           {isClient && (

@@ -122,7 +122,7 @@ export default function About() {
               </li>
             </ul>
             <button className="mt-10 bg-white text-[#7D963D] py-2 px-4 md:text-[12px] transition-all duration-500 ease-out relative overflow-hidden group hover:text-white hidden md:block border-2 border-[#7D963D]">
-              <span className="relative z-10 font-gabriola text-[20px]">Let's Work Together</span>
+              <span className="relative z-10 font-gabriola text-[20px]">Lets Work Together</span>
               <span className="absolute inset-0 bg-gradient-to-r from-[#7D963D] to-[#cdf171] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></span>
             </button>
           </div>
@@ -136,7 +136,7 @@ export default function About() {
             Have a project in mind?
           </h2>
           <h3 className="text-white text-[20px] md:text-[30px] font-calibri italic">
-            Let's Talk To Us
+            Lets Talk To Us
           </h3>
         </div>
         <div className="relative z-10">

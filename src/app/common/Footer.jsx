@@ -8,12 +8,13 @@ import { CiFacebook } from "react-icons/ci";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { TiSocialTwitterCircular } from "react-icons/ti";
 import { PiWhatsappLogo } from "react-icons/pi";
+import Image from 'next/image';
 import Link from "next/link";
 const Footer = () => {
   return (
     <>
       <div className="flex justify-center items-center w-full pt-12">
-        <img src={logo.src} alt="Company Logo" width={100} height={100} />
+      <Image src={logo} alt="Company Logo" width={100} height={100} />
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center w-full pt-12 pb-5 space-y-12 md:space-y-0 md:space-x-32">
         {/* Address Column */}

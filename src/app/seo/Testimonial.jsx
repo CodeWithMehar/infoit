@@ -21,7 +21,7 @@ export default function Testimonial() {
         </h1>
         <p className="text-gray-700 font-gabriola text-[20px] italic">
           Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-          aspernatur aut odit aut fugit, sed quia.
+          aspernatur aut odit aut fugit sed quia.
         </p>
         <button className="mt-5 bg-white text-[#7D963D] py-2 rounded-2xl px-6 md:px-10 text-sm lg:text-base transition-all duration-500 ease-out relative overflow-hidden group hover:text-white border-2 border-[#7D963D]">
           <span className="relative z-10 font-gabriola text-[20px]">ABOUT US</span>
@@ -68,7 +68,7 @@ export default function Testimonial() {
                 John Dou
               </h2>
               <p className="text-gray-500 group-hover:text-white transition-colors duration-1000 font-gabriola">
-                CEO, Business Co.
+                CEO Business Co.
               </p>
             </div>
           </>

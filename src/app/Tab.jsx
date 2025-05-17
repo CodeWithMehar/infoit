@@ -89,11 +89,11 @@ const TabsComponent = () => {
       <span className="text-4xl md:text-[70px] text-gray-700">Courses</span>
     </h1>
     <p className="text-gray-500 mt-5 font-calibri italic">
-      "Explore a comprehensive selection of courses designed to enhance
+      Explore a comprehensive selection of courses designed to enhance
       your skills and knowledge across various domains. From digital
-      marketing strategies to creative design tools, these courses provide
-      practical insights and tools for success in today’s competitive
-      landscape."
+      marketing strategies to creative design tools these courses provide
+      practical insights and tools for success in today competitive
+      landscape.
     </p>
   </div>
 

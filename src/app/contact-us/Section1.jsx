@@ -8,6 +8,7 @@ import { GoLocation } from "react-icons/go";
 import { MdSupportAgent } from "react-icons/md";
 import Form from "../Form";
 import Image from 'next/image';
+import Link from "next/link";
 const IoIosSettings = dynamic(
   () => import("react-icons/io").then((mod) => mod.IoIosSettings),
   { ssr: false }
@@ -84,9 +85,9 @@ export default function Section1() {
                 <h2 className="text-xl font-semibold font-calibri">
                   {item.title}
                 </h2>
-                <a href={item.link} className=" hover:underline font-calibri">
-                  {item.content}
-                </a>
+              <Link href={item.link} className="hover:underline font-calibri">
+  {item.content}
+</Link>
               </motion.div>
             ))}
           </div>
@@ -99,7 +100,7 @@ export default function Section1() {
             Have a project in mind?
           </h2>
           <h3 className="text-white text-[20px] md:text-[30px] font-calibri italic">
-            Let's Talk To Us
+            Lets Talk To Us
           </h3>
         </div>
         <div className="relative z-10">

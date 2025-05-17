@@ -8,11 +8,19 @@ const nextConfig = {
       'media.istockphoto.com',
       'secaitech.com',
       'cdn-icons-gif.flaticon.com',
-      'infoitexpert.com', // 👈 Add this line
-       'img.freepik.com',
-       'media.istockphoto.com',
-       'demo.bravisthemes.com'
+      'infoitexpert.com',
+      'img.freepik.com',
+      'demo.bravisthemes.com',
+      
     ],
+    formats: ['image/avif', 'image/webp'],  // support modern formats
+  },
+   unoptimized: true, // <-- add this temporarily to fix build issues
+  // Optional: enable experimental AVIF support (Next.js 13+)
+  experimental: {
+    images: {
+      allowFutureImage: true,
+    },
   },
 };
 

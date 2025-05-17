@@ -7,6 +7,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import About from "./About";
 import SocialIcons from "../socialicons";
 import Image from "next/image";
+import Link from "next/link";
 // Dynamically import motion.div to avoid SSR issues
 const MotionDiv = dynamic(
   () => import("framer-motion").then((mod) => mod.motion.div),
@@ -41,13 +42,13 @@ const Page = () => {
           <div className="relative group top-64 left-14 bg-gray-700 border-l-8 border-[#7d963d] w-[250px] h-[60px] rounded-lg text-center flex items-center justify-center overflow-hidden">
             <div className="absolute inset-0 bg-[#7d963d] scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-left z-0"></div>
             <p className="relative flex gap-3 items-center text-gray-200 group-hover:text-white z-10 font-calibri">
-              <a href="/" className="hover:text-white font-calibri">
-                HOME
-              </a>
-              <PiArrowsClockwiseBold />
-              <a href="/about-us" className="hover:text-white">
-                ABOUT
-              </a>
+             <Link href="/" className="hover:text-white font-calibri">
+  HOME
+</Link>
+<PiArrowsClockwiseBold />
+<Link href="/about-us" className="hover:text-white">
+  ABOUT
+</Link>
             </p>
           </div>
           <motion.h1
