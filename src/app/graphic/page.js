@@ -10,6 +10,7 @@ import Form2 from "../Form2";
 import star from "../../img/star2.png";
 import logo from "../../img/logo.png";
 import SocialIcons from "../socialicons";
+import Image from 'next/image';
 export default function page() {
   const [isClient, setIsClient] = useState(false);
 
@@ -59,11 +60,13 @@ export default function page() {
 
           {/* Right Side */}
           <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-            <img
-              className="img-fluid max-w-full h-auto"
-              src="https://media.istockphoto.com/id/1199059577/photo/young-creative-graphic-designer-working-on-project-architectural-drawing-and-color-swatches.jpg?s=612x612&w=0&k=20&c=UpLgkA2eIx4uuKlHYv0RszpFPHctaJol0A2KUBfBcgE="
-              alt="SEO Marketing Image"
-            />
+         <Image
+  src="https://media.istockphoto.com/id/1199059577/photo/young-creative-graphic-designer-working-on-project-architectural-drawing-and-color-swatches.jpg?s=612x612&w=0&k=20&c=UpLgkA2eIx4uuKlHYv0RszpFPHctaJol0A2KUBfBcgE="
+  alt="SEO Marketing Image"
+  width={612}  // image width ke hisaab se adjust karo
+  height={612} // image height ke hisaab se adjust karo
+  className="max-w-full h-auto"
+/>
           </div>
         </div>
       </div>

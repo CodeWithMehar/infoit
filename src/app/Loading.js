@@ -1,14 +1,16 @@
-// components/Loading.js
-import React from 'react';
-import load from '../../src/img/load.gif'; // Assuming you have a local gif file
+import React from "react";
+import Image from "next/image";
+import load from "../../src/img/load.gif";
 
 const Loading = () => {
   return (
-    <div className="flex justify-center items-center h-screen"> {/* Add the background color here */}
-      <img 
-        src={load.src} // Ensure this path is correct
-        alt="Loading..." 
-        className="w-[200px] h-[200px]" // Adjust size as needed
+    <div className="flex justify-center items-center h-screen bg-black">
+      <Image
+        src={load}
+        alt="Loading..."
+        width={200}
+        height={200}
+        priority={true}
       />
     </div>
   );

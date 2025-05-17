@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Image from "next/image";
 const tabsData = [
   {
     id: 1,
@@ -117,11 +117,18 @@ const TabsComponent = () => {
     <div className="w-full md:w-[75%] p-5 flex justify-center md:justify-evenly">
       {activeContent && (
         <div className="flex flex-col md:flex-row justify-evenly items-center">
-          <img
+          {/* <img
             src={activeContent.imgSrc}
             alt="Tab Content"
             className="w-full max-w-[300px] mb-4 md:mb-0 md:mr-16 border"
-          />
+          /> */}
+            <Image
+    src={activeContent.imgSrc}
+    alt="Tab Content"
+    width={300}  // max-w-[300px] ke hisaab se
+    height={200} // approximate height, adjust karo apni image ke hisaab se
+    className="w-full"
+  />
           <div className="text-gray-700 text-center md:text-left font-calibri">{activeContent.text}</div>
         </div>
       )}

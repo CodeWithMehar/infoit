@@ -10,6 +10,7 @@ import Form from "../Form";
 import SocialIcons from "../socialicons";
 import star from "../../img/star2.png";
 import logo from "../../img/logo.png";
+import Image from 'next/image';
 export default function page() {
   const [isClient, setIsClient] = useState(false);
 
@@ -34,15 +35,15 @@ export default function page() {
         <div className="relative flex flex-col md:flex-row items-center justify-center h-full w-full text-white text-3xl font-bold px-5 md:px-20 pt-10 md:pt-20 space-y-8 md:space-y-0">
           {/* Left Side */}
           <div className="w-full md:w-1/2 relative flex flex-col items-center md:items-start">
-            <img
+            {/* <img
               src={star.src}
               className="absolute left-[60%] bottom-[60%] h-[200px] w-[200px] slow-spin"
               alt="Spinning Shape"
-            />
-            <img
+            /> */}
+            {/* <img
               src={logo.src}
               className="w-[50px] h-[50px] absolute left-[74%] bottom-[79%]"
-            />
+            /> */}
             <h1 className="text-[40px] md:text-[70px] leading-[70px] capitalize text-center md:text-left pt-5 font-calibri italic">
               Our latest
               <br />
@@ -63,11 +64,13 @@ export default function page() {
 
           {/* Right Side */}
           <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-            <img
-              className="img-fluid max-w-full h-auto"
-              src="https://cdn.pixabay.com/photo/2023/05/21/07/49/blockchain-8008051_1280.jpg"
-              alt="SEO Marketing Image"
-            />
+          <Image
+  src="https://cdn.pixabay.com/photo/2023/05/21/07/49/blockchain-8008051_1280.jpg"
+  alt="SEO Marketing Image"
+  width={800}  // image ki asli width ya approximate
+  height={600} // image ki asli height ya approximate
+  className="max-w-full h-auto"
+/>
           </div>
         </div>
       </div>

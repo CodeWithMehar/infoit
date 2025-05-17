@@ -10,6 +10,7 @@ import Form2 from "../Form2";
 import star from "../../img/star2.png";
 import logo from "../../img/logo.png";
 import SocialIcons from "../socialicons";
+import Image from 'next/image';
 export default function page() {
   const [isClient, setIsClient] = useState(false);
 
@@ -58,11 +59,13 @@ export default function page() {
 
           {/* Right Side */}
           <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-            <img
-              className="img-fluid max-w-full h-auto"
-              src="https://img.freepik.com/premium-photo/corporate-management-strategy-solution-branding-concept_1269531-4.jpg?ga=GA1.1.1042070903.1730462170&semt=ais_hybrid"
-              alt="SEO Marketing Image"
-            />
+          <Image
+  src="https://img.freepik.com/premium-photo/corporate-management-strategy-solution-branding-concept_1269531-4.jpg?ga=GA1.1.1042070903.1730462170&semt=ais_hybrid"
+  alt="SEO Marketing Image"
+  width={800}      // apni required width yahan dena
+  height={450}     // apni required height yahan dena
+  className="max-w-full h-auto"
+/>
           </div>
         </div>
       </div>

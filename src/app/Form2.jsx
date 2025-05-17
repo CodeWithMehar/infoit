@@ -1,6 +1,6 @@
 import React from "react";
 import hire from "../../src/img/hire2.png";
-
+import Image from "next/image";
 export default function Form2() {
   return (
     <>
@@ -10,11 +10,14 @@ export default function Form2() {
         </h1>
 
         <div className="flex justify-center md:justify-start mt-6 md:mt-6">
-          <img
-            src={hire.src}
-            alt="Career Boost"
-            className="w-full "
-          />
+      <Image
+  src={hire.src}
+  alt="Career Boost"
+  className="w-full"
+  width={500} // ⬅️ isko actual width ke hisaab se adjust karo
+  height={300} // ⬅️ isko actual height ke hisaab se adjust karo
+/>
+
         </div>
       </div>
     </>

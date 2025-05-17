@@ -11,6 +11,7 @@ import Form2 from "../Form2";
 import star from "../../img/star2.png";
 import logo from "../../img/logo.png";
 import SocialIcons from "../socialicons";
+import Image from 'next/image';
 export default function page() {
   const [isClient, setIsClient] = useState(false);
 
@@ -60,11 +61,13 @@ export default function page() {
 
           {/* Right Side */}
           <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-            <img
-              className="img-fluid max-w-full h-auto"
-              src="https://cdn.pixabay.com/photo/2015/09/04/23/28/wordpress-923188_1280.jpg"
-              alt="SEO Marketing Image"
-            />
+          <Image
+  src="https://cdn.pixabay.com/photo/2015/09/04/23/28/wordpress-923188_1280.jpg"
+  alt="SEO Marketing Image"
+  width={1280}      // Original image width
+  height={853}      // Approximate height, adjust as needed
+  className="img-fluid max-w-full h-auto"
+/>
           </div>
         </div>
       </div>

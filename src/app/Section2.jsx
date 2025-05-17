@@ -2,21 +2,21 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
+import Image from "next/image";
 export default function Section2() {
   const serviceBoxes = [
     {
       title: "Web Development",
-      img: "https://exdesigners.shop/techbe/assets/img/service/serviceThumb2_1.png",
-      icon: "https://exdesigners.shop/techbe/assets/img/icon/offering1_1.png",
+      img: "https://cdn.pixabay.com/photo/2024/01/10/16/22/team-8499960_1280.jpg",
+      icon: "https://cdn-icons-gif.flaticon.com/14447/14447749.gif",
       description: "Web development is the work involved in ....",
       detailedDescription: "Web development involves the creation of websites and applications...",
       link: "/coding-website",
     },
     {
       title: "WordPress Development",
-      img: "https://exdesigners.shop/techbe/assets/img/service/serviceThumb2_4.png",
-      icon: "https://exdesigners.shop/techbe/assets/img/icon/serviceIcon2_3.png",
+      img: "https://cdn.pixabay.com/photo/2017/01/14/10/56/people-1979261_1280.jpg",
+      icon: "https://cdn-icons-gif.flaticon.com/17569/17569440.gif",
       description: "WordPress Development is the work involved in ....",
       detailedDescription:
         "WordPress development focuses on creating websites using the WordPress...",
@@ -24,8 +24,8 @@ export default function Section2() {
     },
     {
       title: "SEO Services",
-      img: "https://exdesigners.shop/techbe/assets/img/service/serviceThumb2_3.png",
-      icon: "https://exdesigners.shop/techbe/assets/img/icon/serviceIcon2_2.png",
+      img: "https://cdn.pixabay.com/photo/2019/09/25/09/36/team-4503157_1280.jpg",
+      icon: "https://cdn-icons-gif.flaticon.com/15353/15353536.gif",
       description: "SEO Service is the work which involved in ....",
       detailedDescription:
         "SEO services improve the online visibility of a website by optimizing...",
@@ -34,7 +34,7 @@ export default function Section2() {
     {
       title: "Graphic Designing",
       img: "https://cdn.pixabay.com/photo/2024/01/10/16/22/team-8499960_1280.jpg",
-      icon: "https://exdesigners.shop/techbe/assets/img/icon/serviceIcon2_2.png",
+      icon: "https://cdn-icons-gif.flaticon.com/15353/15353536.gif",
       description: "Graphic Designing is the work which involved in ....",
       detailedDescription:
         "SEO services improve the online visibility of a website by optimizing...",
@@ -43,7 +43,7 @@ export default function Section2() {
     {
       title: "Video Editing",
       img: "https://cdn.pixabay.com/photo/2017/01/14/10/56/people-1979261_1280.jpg",
-      icon: "https://exdesigners.shop/techbe/assets/img/icon/serviceIcon2_2.png",
+      icon: "https://cdn-icons-gif.flaticon.com/18128/18128662.gif",
       description: "Video Editing is the work which involved in ....",
       detailedDescription:
         "SEO services improve the online visibility of a website by optimizing...",
@@ -52,7 +52,7 @@ export default function Section2() {
     {
       title: "Digital Marketing",
       img: "https://cdn.pixabay.com/photo/2019/09/25/09/36/team-4503157_1280.jpg",
-      icon: "https://exdesigners.shop/techbe/assets/img/icon/serviceIcon2_2.png",
+      icon: "https://cdn-icons-gif.flaticon.com/17675/17675700.gif",
       description:
         "Digital Marketing Service is the work which involved in ....",
       detailedDescription:
@@ -82,19 +82,33 @@ export default function Section2() {
   return (
     <div className="w-full bg-white pt-20" ref={servicesRef}>
       <div className="flex items-center justify-center space-x-2 mb-1">
-        <img
+        {/* <img
           src="https://img.icons8.com/?size=160&id=UPyS5SRZwyVR&format=png"
           alt=""
           className="w-5 h-5"
-        />
+        /> */}
+        <Image
+  src="https://img.icons8.com/?size=160&id=UPyS5SRZwyVR&format=png"
+  alt=""
+  width={20}   // w-5 = 1.25rem ≈ 20px
+  height={20}  // h-5 = 1.25rem ≈ 20px
+  className="inline-block"
+/>
         <h3 className="text-[#7d963d] font-bold text-lg uppercase font-gabriola">
           Our Feathered Services
         </h3>
-        <img
+        {/* <img
           src="https://img.icons8.com/?size=160&id=UPyS5SRZwyVR&format=png"
           alt=""
           className="w-5 h-5"
-        />
+        /> */}
+        <Image
+  src="https://img.icons8.com/?size=160&id=UPyS5SRZwyVR&format=png"
+  alt=""
+  width={20}  // w-5 approx 20px
+  height={20} // h-5 approx 20px
+  className="inline-block"
+/>
       </div>
       <h1 className="text-center text-5xl font-normal leading-tight font-calibri italic ">
         We Provide Exclusive Service For <br />
@@ -109,17 +123,32 @@ export default function Section2() {
             animate={isVisible ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
-            <img
+            {/* <img
               src={service.img}
               alt={service.title}
               className="w-full hover:scale-105 transition-transform duration-1000 grayscale hover:grayscale-0 cursor-pointer"
-            />
+            /> */}
+            <Image
+  src={service.img}
+  alt={service.title}
+  width={500} // apni required width set karo, ya image size ke mutabiq
+  height={300} // apni required height set karo
+  className="w-full hover:scale-105 transition-transform duration-1000 grayscale hover:grayscale-0 cursor-pointer"
+  style={{ objectFit: 'cover' }}
+/>
             <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-[#7D963D] to-[#cdf171] flex items-center justify-center absolute top-1/2 left-5 transform -translate-y-1/2">
-              <img
+              {/* <img
                 src={service.icon}
                 alt={`${service.title} icon`}
                 className="w-8 h-8 transition-transform duration-700 ease-in-out group-hover:rotate-180"
-              />
+              /> */}
+              <Image
+  src={service.icon}
+  alt={`${service.title} icon`}
+  width={32}      // w-8 = 2rem = 32px
+  height={32}
+  className="transition-transform duration-700 ease-in-out group-hover:rotate-180"
+/>
             </div>
 
             <div className="py-3 px-5 mt-5 group-hover:bg-[#7D963D] group-hover:text-white transition-all duration-500 ">

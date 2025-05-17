@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import Counter from "../Counter";
 import { PiArrowBendUpRightLight } from "react-icons/pi";
 import { TbSlashes } from "react-icons/tb";
+import Image from 'next/image';
 // import ProgressBar from "@ramonak/react-progress-bar";
 import ProgressBar from "../ProgressBar";
 // Dynamically import the icon component to avoid hydration issues
@@ -52,27 +53,34 @@ export default function About() {
       </div>
 
       <div className="w-full my-10">
-        <img
-          src="https://demo.bravisthemes.com/orritech/wp-content/uploads/2024/06/img1-us.webp"
-          alt="A modern office setting"
-          className="w-full h-auto"
-        />
+     <Image
+  src="https://demo.bravisthemes.com/orritech/wp-content/uploads/2024/06/img1-us.webp"
+  alt="A modern office setting"
+  width={1920}      // asli width daal do, example ke liye
+  height={1080}     // asli height daal do, example ke liye
+  className="w-full h-auto"
+/>
       </div>
 
       <Counter />
 
       <div className="w-full flex flex-col md:flex-row mt-20">
         <div className="flex w-full md:w-1/2 pl-10 space-x-5 px-5">
-          <img
-            src="https://demo.bravisthemes.com/orritech/wp-content/uploads/2024/06/img-ss3-us.jpg"
-            alt="Team collaboration"
-            className="slow-bounce mt-16 h-[150px] w-[130px] md:h-[300px] md:w-[250px] object-cover"
-          />
-          <img
-            src="https://demo.bravisthemes.com/orritech/wp-content/uploads/2024/06/img-ss3-us1.jpg"
-            alt="Business meeting"
-            className="slow-bounce h-[150px] w-[130px] md:h-[250px] md:w-[250px] object-cover"
-          />
+       <Image
+  src="https://demo.bravisthemes.com/orritech/wp-content/uploads/2024/06/img-ss3-us.jpg"
+  alt="Team collaboration"
+  width={130}     // small screen width (jitna tumne CSS me diya)
+  height={150}    // small screen height
+  className="slow-bounce mt-16 object-cover md:w-[250px] md:h-[300px]"
+/>
+
+<Image
+  src="https://demo.bravisthemes.com/orritech/wp-content/uploads/2024/06/img-ss3-us1.jpg"
+  alt="Business meeting"
+  width={130}
+  height={150}
+  className="slow-bounce object-cover md:w-[250px] md:h-[250px]"
+/>
         </div>
 
         <div className="w-full md:w-1/2 px-5">
@@ -132,11 +140,14 @@ export default function About() {
           </h3>
         </div>
         <div className="relative z-10">
-          <img
-            src="https://demo.bravisthemes.com/orritech/wp-content/uploads/2024/06/man-us.png"
-            alt="Consultation meeting"
-            className="slow-bounce-two w-full max-w-xs mt-10"
-          />
+        
+<Image
+  src="https://demo.bravisthemes.com/orritech/wp-content/uploads/2024/06/man-us.png"
+  alt="Consultation meeting"
+  width={320}        // max-w-xs approx 320px
+  height={300}      // height ko manually set karna padega, ya aspect ratio se calculate karna hoga
+  className="slow-bounce-two mt-10"
+/>
         </div>
         <div className="relative z-10">
           <button className="bg-white text-[#7D963D] py-2 px-4 md:text-[12px] transition-all duration-500 ease-out relative overflow-hidden group hover:text-white hidden md:block border-2 border-[#7D963D]">
@@ -167,11 +178,14 @@ export default function About() {
       </div>
       {/* Right Side */}
       <div className="w-full md:w-[35%] px-5">
-        <img
-          src="https://wpdemo.archiwp.com/engitech/wp-content/uploads/sites/4/2020/02/image2-about.png"
-          alt="Innovative technology"
-          className="w-full h-auto slow-bounce-tw mt-20"
-        />
+      
+<Image
+  src="https://wpdemo.archiwp.com/engitech/wp-content/uploads/sites/4/2020/02/image2-about.png"
+  alt="Innovative technology"
+  width={1200}  // approx width for full width (adjust karo asli image size ke hisaab se)
+  height={800}  // approximate height (adjust karo asli image size ke hisaab se)
+  className="slow-bounce-tw mt-20 object-contain"
+/>
       </div>
     </div>
     </>

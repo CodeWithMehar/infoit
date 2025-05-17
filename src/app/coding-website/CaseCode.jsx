@@ -31,19 +31,19 @@ export default function CaseCode() {
         <CaseCard
           title="CONSTRUCTION COMPANY"
           subtitle="Web Solution "
-          imageUrl="https://demo26.atiframe.com/wp-content/uploads/2020/02/Portfolio_thumb_07.jpg"
+          imageUrl="https://therisesphere.com/wp-content/uploads/2025/03/Mockup2.png"
         />
         {/* Card 2 */}
         <CaseCard
           title="HVAC SERVICE COMPANY"
           subtitle="Web Creation"
-          imageUrl="https://demo26.atiframe.com/wp-content/uploads/2020/01/28298-1.jpg"
+          imageUrl="https://therisesphere.com/wp-content/uploads/2025/03/Digital-Marketing-Company-1-scaled-1-1536x970.jpg"
         />
         {/* Card 3 */}
         <CaseCard
           title="ECOMMERCE BUSINESS"
           subtitle="+70% Website Traffic"
-          imageUrl="https://demo26.atiframe.com/wp-content/uploads/2020/02/Portfolio_thumb_06.jpg"
+          imageUrl="https://therisesphere.com/wp-content/uploads/2025/03/Grey-Orange-Simple-Work-Desk-Photo-Digital-Marketing-Strategy-Youtube-Thumbnail.png"
         />
       </div>
     </div>

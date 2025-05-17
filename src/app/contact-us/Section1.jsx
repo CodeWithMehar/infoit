@@ -7,6 +7,7 @@ import { FiPhoneCall } from "react-icons/fi";
 import { GoLocation } from "react-icons/go";
 import { MdSupportAgent } from "react-icons/md";
 import Form from "../Form";
+import Image from 'next/image';
 const IoIosSettings = dynamic(
   () => import("react-icons/io").then((mod) => mod.IoIosSettings),
   { ssr: false }
@@ -102,11 +103,13 @@ export default function Section1() {
           </h3>
         </div>
         <div className="relative z-10">
-          <img
-            src="https://demo.bravisthemes.com/orritech/wp-content/uploads/2024/06/man-us.png"
-            alt="Consultation meeting"
-            className="slow-bounce-two w-full max-w-xs mt-10"
-          />
+        <Image
+  src="https://demo.bravisthemes.com/orritech/wp-content/uploads/2024/06/man-us.png"
+  alt="Consultation meeting"
+  width={400}    // approximate width, adjust as needed
+  height={400}   // approximate height, adjust as needed
+  className="slow-bounce-two w-full max-w-xs mt-10"
+/>
         </div>
         <div className="relative z-10">
           <button className="bg-white text-[#7D963D] py-2 px-4 md:text-[12px] transition-all duration-500 ease-out relative overflow-hidden group hover:text-white hidden md:block border-2 border-[#7D963D]">

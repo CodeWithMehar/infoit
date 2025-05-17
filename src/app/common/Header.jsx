@@ -10,6 +10,8 @@ import { BiDownArrowAlt } from "react-icons/bi";
 import menu from "../../img/menu.gif";
 import star from "../../img/star2.png";
 import logo from "../../img/logo.png";
+
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [bgColor, setBgColor] = useState("bg-transparent");
@@ -56,14 +58,20 @@ export default function Header() {
               alt="Company Logo"
               className="w-[100px] h-[100px] mt-5"
             /> */}
-               <img
+            <Image
               src={star.src}
-              className="left-[60%]  h-[200px] w-[200px] slow-spin"
               alt="Spinning Shape"
+              width={200}
+              height={200}
+              className="left-[60%] slow-spin"
             />
-            <img
+
+            <Image
               src={logo.src}
-              className="w-[50px] h-[50px] absolute left-[42%] bottom-[38%]"
+              alt="Logo"
+              width={50}
+              height={50}
+              className="absolute left-[41%] bottom-[33%]"
             />
           </div>
           {/* Logo */}
@@ -82,7 +90,14 @@ export default function Header() {
               >
                 {/* Menu bar icon */}
                 {/* <BiMenuAltRight className="text-[40px] text-white" /> */}
-                <img src={menu.src} alt=""   onClick={() => setIsOpen(true)} className="w-[40px] h-[35px] transform rotate-180"/>
+              <Image
+  src={menu.src}
+  alt="Menu icon"
+  onClick={() => setIsOpen(true)}
+  width={40}
+  height={35}
+  className="transform rotate-180 cursor-pointer"
+/>
               </button>
               {/* <h1
                 className="text-[23px] cursor-pointer text-white font-calibri italic font-extrabold"

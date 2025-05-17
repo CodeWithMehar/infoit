@@ -5,7 +5,7 @@ import { CiFacebook, CiLinkedin } from "react-icons/ci";
 import { SlSocialTwitter } from "react-icons/sl";
 import anim from "../img/anim1.png";
 import anim1 from "../img/anim2.png";
-
+import Image from "next/image";
 export default function TeamSection() {
   const teamMembers = [
     {
@@ -63,25 +63,46 @@ export default function TeamSection() {
   return (
     <div className="bg-white py-0 relative overflow-x-hidden">
       {/* Animated Image - 1 */}
-      <img
+      {/* <img
         src={anim.src}
         alt="Animated graphic 1"
         className="w-48 h-48 absolute top-[13%] left-[5%] slow-bounce max-w-full"
+      /> */}
+      <Image
+        src={anim.src}
+        alt="Animated graphic 1"
+        width={192} // 48 * 4 (tailwind's w-48 is 12rem = 192px)
+        height={192} // 48 * 4 = 192px
+        className="absolute top-[13%] left-[5%] slow-bounce max-w-full"
       />
 
       {/* Section Title */}
       <div className="flex items-center justify-center space-x-2">
-        <img
+        {/* <img
           src="https://img.icons8.com/?size=160&id=UPyS5SRZwyVR&format=png"
           alt="Icon"
           className="w-5 h-5"
+        /> */}
+        <Image
+          src="https://img.icons8.com/?size=160&id=UPyS5SRZwyVR&format=png"
+          alt="Icon"
+          width={20} // w-5 = 20px
+          height={20} // h-5 = 20px
+          className="w-5 h-5" // Optional: if you want to override sizes with Tailwind
         />
         <h3 className="text-[#7d963d] font-bold text-xl uppercase font-gabriola">
           OUR TEAM MEMBER
         </h3>
-        <img
+        {/* <img
           src="https://img.icons8.com/?size=160&id=UPyS5SRZwyVR&format=png"
           alt="Icon"
+          className="w-5 h-5"
+        /> */}
+        <Image
+          src="https://img.icons8.com/?size=160&id=UPyS5SRZwyVR&format=png"
+          alt="Icon"
+          width={20} // Tailwind's w-5 = 20px
+          height={20} // Tailwind's h-5 = 20px
           className="w-5 h-5"
         />
       </div>
@@ -106,14 +127,22 @@ export default function TeamSection() {
             >
               {/* Team Member Image with overlay */}
               <div className="relative w-full h-64 overflow-hidden">
-                <img
+                {/* <img
                   src={member.img}
                   alt={member.name}
                   className="w-full h-full object-cover transition-transform duration-700 ease-in-out transform group-hover:scale-110"
+                /> */}
+                <Image
+                  src={member.img}
+                  alt={member.name}
+                  fill
+                  className="object-cover transition-transform duration-700 ease-in-out transform group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col justify-center items-center">
                   <div className="text-white text-center">
-                    <h3 className="text-xl font-bold mb-2 font-cambria">{member.name}</h3>
+                    <h3 className="text-xl font-bold mb-2 font-cambria">
+                      {member.name}
+                    </h3>
                     <p className="text-xl font-calibri">{member.designation}</p>
                   </div>
                 </div>
@@ -153,11 +182,17 @@ export default function TeamSection() {
         </div>
 
         {/* Animated Image - 2 */}
-        <img
+        {/* <img
           src={anim1.src}
           alt="Animated graphic 2"
           className="w-48 h-48 absolute top-[70%] left-[70%] transform -translate-x-1/2 slow-bounce max-w-full"
-        />
+        /> */}
+        {/* <Image
+          src={anim1.src}
+          alt="Animated graphic 2"
+          fill
+          className="w-2 h-2 absolute top-[70%] left-[70%] transform -translate-x-1/2 slow-bounce"
+        /> */}
       </div>
     </div>
   );

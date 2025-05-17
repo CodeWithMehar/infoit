@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Section1 from './Section1';
 import SocialIcons from '../socialicons';
 
-export default function Page() {
+export default function page() {
   const [isClient, setIsClient] = useState(false);
   const { scrollY } = useScroll();
   const yScroll = useTransform(scrollY, [0, 300], [0, -50]);

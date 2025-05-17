@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import CountUp from "react-countup";
-
+import Image from 'next/image';
 export default function Counter() {
   const [counterOn, setCounterOn] = useState(false); // Initialize counterOn as false
 
@@ -13,19 +13,24 @@ export default function Counter() {
   return (
     <div className="w-full bg-[#ffffff] pt-0">
       <div className="flex items-center justify-center space-x-2">
-        <img
-          src="https://img.icons8.com/?size=160&id=UPyS5SRZwyVR&format=png"
-          alt="Decorative Icon"
-          className="w-[16px] h-[16px] sm:w-[20px] sm:h-[20px]"
-        />
+     
+<Image
+  src="https://img.icons8.com/?size=160&id=UPyS5SRZwyVR&format=png"
+  alt="Decorative Icon"
+  width={20}      // max width jo tumne sm breakpoint pe di hai
+  height={20}     // max height jo tumne sm breakpoint pe di hai
+  className="w-[16px] h-[16px] sm:w-[20px] sm:h-[20px]"
+/>
         <h3 className="text-[#7d963d] font-bold text-[16px] sm:text-[20px] uppercase font-gabriola">
           About Company
         </h3>
-        <img
-          src="https://img.icons8.com/?size=160&id=UPyS5SRZwyVR&format=png"
-          alt="Decorative Icon"
-          className="w-[16px] h-[16px] sm:w-[20px] sm:h-[20px]"
-        />
+     <Image
+  src="https://img.icons8.com/?size=160&id=UPyS5SRZwyVR&format=png"
+  alt="Decorative Icon"
+  width={20}   // maximum width (px)
+  height={20}  // maximum height (px)
+  className="w-[16px] h-[16px] sm:w-[20px] sm:h-[20px]"
+/>
       </div>
 
       {/* Heading */}
@@ -39,31 +44,34 @@ export default function Counter() {
           {
             end: 100,
             label: "Satisfied Clients",
-            icon: "https://exdesigners.shop/techbe/assets/img/icon/counterIcon1_1.png",
+            icon: "https://cdn-icons-gif.flaticon.com/15579/15579035.gif",
           },
           {
             end: 300,
             label: "Projects Completed",
-            icon: "https://exdesigners.shop/techbe/assets/img/icon/counterIcon1_2.png",
+            icon: "https://cdn-icons-gif.flaticon.com/15578/15578522.gif",
           },
           {
             end: 12,
             label: "Team Members",
-            icon: "https://exdesigners.shop/techbe/assets/img/icon/counterIcon1_1.png",
+            icon: "https://cdn-icons-gif.flaticon.com/16059/16059819.gif",
           },
           {
             end: 8,
             label: "Year's Experience",
-            icon: "https://exdesigners.shop/techbe/assets/img/icon/counterIcon1_1.png",
+            icon: "https://cdn-icons-gif.flaticon.com/12134/12134098.gif",
           },
         ].map((item, index) => (
           <div key={index} className="flex flex-col items-center">
             <div className="flex items-center gap-2">
-              <img
-                src={item.icon}
-                alt={`${item.label} Icon`}
-                className="w-[40px] sm:w-[60px]"
-              />
+          
+<Image
+  src={item.icon}
+  alt={`${item.label} Icon`}
+  width={60}          // max width
+  height={60}         // max height
+  className="w-[40px] sm:w-[60px] rounded-full"
+/>
               <h1 className="text-[40px] sm:text-[50px] font-bold text-white font-calibri">
                 {counterOn && (
                   <CountUp start={0} end={item.end} duration={3} delay={0} />

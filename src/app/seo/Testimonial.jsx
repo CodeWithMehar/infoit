@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { IoMdFlower } from "react-icons/io";
-
+import Image from 'next/image';
 export default function Testimonial() {
   const [isClient, setIsClient] = useState(false);
 
@@ -33,11 +33,13 @@ export default function Testimonial() {
         {isClient && (
           <>
             <div className="flex-1 border rounded-xl bg-[#e2f3b5] px-5 py-5 flex flex-col items-center justify-center text-center hover:bg-[#7d963d] cursor-pointer shadow-inner transition-colors duration-1000 group relative">
-              <img
-                src="https://cdn.pixabay.com/photo/2022/11/21/15/31/business-7607339_1280.jpg"
-                alt="Client 1"
-                className="rounded-full w-[70px] h-[70px] mb-4"
-              />
+          <Image
+  src="https://cdn.pixabay.com/photo/2022/11/21/15/31/business-7607339_1280.jpg"
+  alt="Client 1"
+  width={70}
+  height={70}
+  className="rounded-full mb-4"
+/>
               <h2 className="text-[20px] font-medium capitalize text-gray-600 py-5 group-hover:text-white transition-colors duration-1000 font-calibri italic">
                 Adipiscing elit vitae dicta sunt explicabo. Nemo enim ipsam
                 voluptatem quia.
@@ -51,11 +53,13 @@ export default function Testimonial() {
               <IoMdFlower className="absolute -right-20 text-[#7d963d] text-[40px] md:text-[100px] slow-spin" />
             </div>
             <div className="flex-1 border rounded-xl bg-[#e2f3b5] px-5 py-5 flex flex-col items-center justify-center text-center hover:bg-[#7d963d] cursor-pointer shadow-inner transition-colors duration-1000 group">
-              <img
-                src="https://cdn.pixabay.com/photo/2022/11/21/15/31/business-7607339_1280.jpg"
-                alt="Client 2"
-                className="rounded-full w-[70px] h-[70px] mb-4"
-              />
+           <Image
+  src="https://cdn.pixabay.com/photo/2022/11/21/15/31/business-7607339_1280.jpg"
+  alt="Client 2"
+  width={70}
+  height={70}
+  className="rounded-full mb-4"
+/>
               <h2 className="text-[20px] font-medium capitalize text-gray-600 py-5 group-hover:text-white transition-colors duration-1000 font-calibri italic">
                 Adipiscing elit vitae dicta sunt explicabo. Nemo enim ipsam
                 voluptatem quia.
