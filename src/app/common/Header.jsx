@@ -1,15 +1,15 @@
 "use client";
 import React, { useState, useEffect } from "react";
 // import logo from "../../img/logo.png";
-import logo2 from "../../img/logo2.avif";
+// import logo2 from "../../img/logo.webp";
 import { FaTimes } from "react-icons/fa";
 import Image from "next/image";
-import { BiMenuAltRight } from "react-icons/bi";
+// import { BiMenuAltRight } from "react-icons/bi";
 import Link from "next/link";
 import { BiDownArrowAlt } from "react-icons/bi";
 import menu from "../../img/menu.gif";
 import star from "../../img/star2.png";
-import logo from "../../img/logo.avif";
+import logo from "../../img/logo.webp";
 
 
 export default function Header() {

@@ -12,13 +12,11 @@ const nextConfig = {
       'img.freepik.com',
       'demo.bravisthemes.com',
     ],
-    formats: ['image/avif', 'image/webp'],  // support modern formats
-    unoptimized: true, // ✅ this disables image optimization
+    formats: ['image/avif', 'image/webp'],
+    unoptimized: true, // yahan hona chahiye, sirf yahan
   },
   experimental: {
-    images: {
-      allowFutureImage: true, // ✅ optional, no harm
-    },
+    allowFutureImage: true, // sirf ye line allowed hai
   },
 };
 
