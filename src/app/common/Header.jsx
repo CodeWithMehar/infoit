@@ -118,7 +118,9 @@ export default function Header() {
           <div className="flex flex-col md:flex-row h-[100vh]">
             <div className="w-full md:w-[50%] flex justify-center items-center p-8">
               <Image
-                src={logo2}
+              src="https://demo.bravisthemes.com/orritech/wp-content/uploads/2024/06/man-us.png"
+              width={400}    // approximate width, adjust as needed
+  height={400} 
                 alt="Company Logo 2"
                 className="w-[100px] h-[100px]"
               />
