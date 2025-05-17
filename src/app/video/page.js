@@ -11,7 +11,7 @@ import star from "../../img/star2.png";
 import logo from "../../img/logo.png";
 import SocialIcons from "../socialicons";
 import Image from 'next/image';
-export default function page() {
+export default function Page() {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {

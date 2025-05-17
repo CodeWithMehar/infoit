@@ -12,7 +12,7 @@ import Loading from "./Loading"; // Import your Loading component
 import SocialIcons from "./socialicons";
 import Popup from "./Popup";
 
-export default function page() {
+export default function Page() {
   const [loading, setLoading] = useState(false); // State to manage loading
   const router = useRouter(); // Initialize router
 
