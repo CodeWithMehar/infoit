@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import logo from "../../img/logo2.png";
+import logo from "../../img/logo2.avif";
 import { FaEarthAfrica } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";

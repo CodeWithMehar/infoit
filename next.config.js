@@ -11,12 +11,10 @@ const nextConfig = {
       'infoitexpert.com',
       'img.freepik.com',
       'demo.bravisthemes.com',
-      
     ],
     formats: ['image/avif', 'image/webp'],  // support modern formats
+    unoptimized: true, // <-- directly yahan rakhna hai, experimental ke andar nahi
   },
-   unoptimized: true, // <-- add this temporarily to fix build issues
-  // Optional: enable experimental AVIF support (Next.js 13+)
   experimental: {
     images: {
       allowFutureImage: true,
