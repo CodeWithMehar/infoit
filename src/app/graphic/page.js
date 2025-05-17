@@ -7,8 +7,8 @@ import Testimonial from "../seo/Testimonial";
 import TabsComponent from "../Tab";
 import Form from "../Form";
 import Form2 from "../Form2";
-import star from "../../img/star2.png";
-import logo from "../../img/logo.png";
+// import star from "../../img/star2.png";
+// import logo from "../../img/logo.png";
 import SocialIcons from "../socialicons";
 import Image from 'next/image';
 export default function Page() {

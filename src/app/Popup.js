@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import axios from "axios";
-import { useRouter } from "next/router"; // This will now be removed
-import Link from "next/link"; // Import Link for redirection
+// import { useRouter } from "next/router"; // This will now be removed
+// import Link from "next/link"; // Import Link for redirection
 import Confetti from "react-confetti";
 
 const ServiceBooking = () => {

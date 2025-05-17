@@ -4,7 +4,7 @@ import React from "react";
 import { CiFacebook, CiLinkedin } from "react-icons/ci";
 import { SlSocialTwitter } from "react-icons/sl";
 import anim from "../img/anim1.png";
-import anim1 from "../img/anim2.png";
+// import anim1 from "../img/anim2.png";
 import Image from "next/image";
 export default function TeamSection() {
   const teamMembers = [

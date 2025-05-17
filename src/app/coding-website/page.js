@@ -8,8 +8,8 @@ import TabsComponent from "../Tab";
 import Form2 from "../Form2";
 import Form from "../Form";
 import SocialIcons from "../socialicons";
-import star from "../../img/star2.png";
-import logo from "../../img/logo.png";
+// import star from "../../img/star2.png";
+// import logo from "../../img/logo.avif";
 import Image from 'next/image';
 export default function Page() {
   const [isClient, setIsClient] = useState(false);
