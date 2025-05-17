@@ -13,11 +13,11 @@ const nextConfig = {
       'demo.bravisthemes.com',
     ],
     formats: ['image/avif', 'image/webp'],  // support modern formats
-    unoptimized: true, // <-- directly yahan rakhna hai, experimental ke andar nahi
+    unoptimized: true, // ✅ this disables image optimization
   },
   experimental: {
     images: {
-      allowFutureImage: true,
+      allowFutureImage: true, // ✅ optional, no harm
     },
   },
 };
