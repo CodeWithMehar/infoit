@@ -1,29 +1,29 @@
 "use client";
 import React from "react";
-import Image from 'next/image';
+import Image from "next/image";
 export default function MyComponent() {
   return (
     <>
       <div className="w-full pt-8 sm:pt-16">
         {/* Section Title */}
         <div className="flex items-center justify-center space-x-2">
-         <Image
-  src="https://img.icons8.com/?size=160&id=UPyS5SRZwyVR&format=png"
-  alt="Decorative Icon"
-  width={20}   // sm width ~ 5 * 4 = 20px
-  height={20}
-  className="w-4 h-4 sm:w-5 sm:h-5"
-/>
+          <Image
+            src="https://img.icons8.com/?size=160&id=UPyS5SRZwyVR&format=png"
+            alt="Decorative Icon"
+            width={20} // sm width ~ 5 * 4 = 20px
+            height={20}
+            className="w-4 h-4 sm:w-5 sm:h-5"
+          />
           <h3 className="text-[#7d963d] font-bold text-2xl sm:text-2xl uppercase text-center font-gabriola">
             For Over 15 Years. For Millions of Users
           </h3>
-         <Image
-  src="https://img.icons8.com/?size=160&id=UPyS5SRZwyVR&format=png"
-  alt="Decorative Icon"
-  width={20}    // Tailwind ke sm:w-5 h-5 ke around size
-  height={20}
-  className="w-4 h-4 sm:w-5 sm:h-5"
-/>
+          <Image
+            src="https://img.icons8.com/?size=160&id=UPyS5SRZwyVR&format=png"
+            alt="Decorative Icon"
+            width={20} // Tailwind ke sm:w-5 h-5 ke around size
+            height={20}
+            className="w-4 h-4 sm:w-5 sm:h-5"
+          />
         </div>
 
         {/* Heading */}

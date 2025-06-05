@@ -34,7 +34,7 @@ export default function Form() {
     }
 
     try {
-      const response = await axios.post('http://localhost:8000/contact', formData);
+      const response = await axios.post('https://infoitexpert.com/contact', formData);
       setStatus('Thank You! We will contact you soon');
       setFormData({ name: '', email: '', tel: '' }); // Reset form fields
       setShowConfetti(true); // Show confetti after successful form submission
