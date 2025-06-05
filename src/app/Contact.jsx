@@ -48,10 +48,13 @@ export default function MyComponent() {
         <h1 className="text-[30px] sm:text-[40px] md:text-[50px] font-bold mb-4 sm:mb-6 font-calibri">
           NEED A CONSULTATION?
         </h1>
-        <button className="bg-white text-[#7D963D] py-2 px-4 text-[10px] sm:text-[12px] lg:text-[14px] transition-all duration-500 ease-out relative overflow-hidden group hover:text-white border-2 border-[#7D963D] hidden md:block">
-          <span className="relative z-10 font-gabriola">CONTACT NOW</span>
-          <span className="absolute inset-0 bg-gradient-to-r from-[#7D963D] to-[#cdf171] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></span>
-        </button>
+    <a href="https://infoitexpert.com/contact-us">
+  <button className="bg-white text-[#7D963D] py-2 px-4 text-[10px] sm:text-[12px] lg:text-[14px] transition-all duration-500 ease-out relative overflow-hidden group hover:text-white border-2 border-[#7D963D] hidden md:block">
+    <span className="relative z-10 font-gabriola">CONTACT NOW</span>
+    <span className="absolute inset-0 bg-gradient-to-r from-[#7D963D] to-[#cdf171] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></span>
+  </button>
+</a>
+
       </div>
     </>
   );

@@ -4,12 +4,12 @@ import load from "../../src/img/load.gif";
 
 const Loading = () => {
   return (
-    <div className="flex justify-center items-center h-screen bg-black">
+    <div className="flex justify-center items-center h-screen bg-white">
       <Image
         src={load}
         alt="Loading..."
-        width={200}
-        height={200}
+        width={100}
+        height={100}
         priority={true}
       />
     </div>

@@ -11,7 +11,6 @@ import menu from "../../img/menu.gif";
 import star from "../../img/star2.png";
 import logo from "../../img/logo.webp";
 
-
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [bgColor, setBgColor] = useState("bg-transparent");
@@ -63,7 +62,8 @@ export default function Header() {
               alt="Spinning Shape"
               width={200}
               height={200}
-              className="left-[60%] slow-spin"
+              className="left-[60%] gentle-tilt"
+              priority
             />
 
             <Image
@@ -90,14 +90,14 @@ export default function Header() {
               >
                 {/* Menu bar icon */}
                 {/* <BiMenuAltRight className="text-[40px] text-white" /> */}
-              <Image
-  src={menu.src}
-  alt="Menu icon"
-  onClick={() => setIsOpen(true)}
-  width={40}
-  height={35}
-  className="transform rotate-180 cursor-pointer"
-/>
+                <Image
+                  src={menu.src}
+                  alt="Menu icon"
+                  onClick={() => setIsOpen(true)}
+                  width={40}
+                  height={35}
+                  className="transform rotate-180 cursor-pointer"
+                />
               </button>
               {/* <h1
                 className="text-[23px] cursor-pointer text-white font-calibri italic font-extrabold"
@@ -118,9 +118,9 @@ export default function Header() {
           <div className="flex flex-col md:flex-row h-[100vh]">
             <div className="w-full md:w-[50%] flex justify-center items-center p-8">
               <Image
-              src="https://demo.bravisthemes.com/orritech/wp-content/uploads/2024/06/man-us.png"
-              width={400}    // approximate width, adjust as needed
-  height={400} 
+                src="https://demo.bravisthemes.com/orritech/wp-content/uploads/2024/06/man-us.png"
+                width={400} // approximate width, adjust as needed
+                height={400}
                 alt="Company Logo 2"
                 className="w-[100px] h-[100px]"
               />

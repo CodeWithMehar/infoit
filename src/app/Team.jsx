@@ -8,10 +8,20 @@ import anim from "../img/anim1.png";
 import Image from "next/image";
 export default function TeamSection() {
   const teamMembers = [
+     {
+      name: "William Samuel",
+      designation: "Full Stack Developer",
+      img: "https://jbfslohawat.com/wp-content/uploads/2025/01/William-1.jpg",
+      social: {
+        facebook: "#",
+        twitter: "#",
+        linkedin: "#",
+      },
+    },
     {
       name: "SAWAI SISODIYA",
       designation: "Full Stack Developer",
-      img: "https://infoitexpert.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-07-at-11.32.51_27be1ae3.jpg",
+      img: "https://jbfslohawat.com/wp-content/uploads/2025/01/William-1.jpg",
       social: {
         facebook: "#",
         twitter: "#",
@@ -21,7 +31,7 @@ export default function TeamSection() {
     {
       name: "ARTI",
       designation: "Full Stack Developer",
-      img: "https://infoitexpert.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-07-at-13.22.26_c7610f3c.jpg",
+      img: "https://jbfslohawat.com/wp-content/uploads/2025/01/Aarti.jpg",
       social: {
         facebook: "#",
         twitter: "#",
@@ -31,7 +41,7 @@ export default function TeamSection() {
     {
       name: "MEHAR HAFIZA",
       designation: "Full Stack Developer",
-      img: "https://infoitexpert.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-07-at-13.27.59_b17ed68c.jpg",
+      img: "https://jbfslohawat.com/wp-content/uploads/2025/06/c5937ecf-1491-4134-9552-1bcf392a03b9.jpeg",
       social: {
         facebook: "#",
         twitter: "#",

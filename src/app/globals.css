@@ -133,5 +133,29 @@ body {
 .shadow-glow {
   box-shadow: 0 0 10px rgba(125, 150, 61, 1), 0 0 20px rgba(125, 150, 61, 0.7), 0 0 30px rgba(125, 150, 61, 0.5);
 }
+@keyframes gentleTilt {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.gentle-tilt {
+  animation: gentleTilt 3s ease-in-out infinite;
+   animation-delay: 10s;
+    will-change: transform;
+  backface-visibility: hidden;
+}
 
 
