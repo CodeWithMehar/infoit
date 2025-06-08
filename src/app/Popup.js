@@ -39,7 +39,7 @@ const ServiceBooking = () => {
 
     try {
       // Send data to API
-      const response = await axios.post("http://51.20.147.28:8000/popup", formData);
+      const response = await axios.post("https://api.infoitexpert.com/popup", formData);
 
       // Display success message
       setStatus("Thank you! Your details have been submitted.");
